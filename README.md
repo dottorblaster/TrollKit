@@ -6,4 +6,4 @@ This set of instructions only does what you need to do with your hands. So you c
 
 # References
 Alessio 'Blaster' Biancalana - Blogger, sysadmin, and so on.
-dottorblaster <at> gmail <dot> com if you have to ask.
+dottorblaster [at] gmail [dot] com if you have to ask.
