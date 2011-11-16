@@ -1,4 +1,4 @@
-## TrollKit
+## Problems, Netkit? :D
 # Simplify your Netkit setup phase.
 
 I saw that little awesome software called Netkit, so I decided to make a little script to make life easier in the setup phase.
