@@ -13,7 +13,9 @@ mkdir ~/$dir
 cd ~/$dir
 
 ## Download packages
-# wget various things
+wget http://wiki.netkit.org/download/netkit/netkit-$netkit_ver.tar.bz2
+wget http://wiki.netkit.org/download/netkit-filesystem/netkit-filesystem-i386-F$netkit_fs_ver.tar.bz2
+wget http://wiki.netkit.org/download/netkit-kernel/netkit-kernel-i386-K$netkit_kernel_ver.tar.bz2
 
 ## Extracting stuff here. Bloat it out babe!
 for i in $( ls ); do
