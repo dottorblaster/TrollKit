@@ -14,6 +14,11 @@ dir=Netkit
 mkdir ~/${dir}
 cd ~/${dir}
 
+## Export useful variables. We will write 'em to bashrc later.
+
+export NETKIT_HOME=/home/`whoami`/${dir}
+export PATH=$NETKIT_HOME/bin:$PATH
+
 ## Download packages
 wget -c http://wiki.netkit.org/download/netkit/netkit-${netkit_ver}.tar.bz2
 wget -c http://wiki.netkit.org/download/netkit-filesystem/netkit-filesystem-i386-F${netkit_fs_ver}.tar.bz2
@@ -29,7 +34,7 @@ mv netkit/* . && rm -rf netkit
 rm -rf *.tar.*
 
 ## Some funny stuff for our .bashrc :>
-echo "export NETKIT_HOME=/home/foo/netkit" >> ~/.bashrc
+echo "export NETKIT_HOME=/home/`whoami`/${dir}" >> ~/.bashrc
 echo "export MANPATH=:$NETKIT_HOME/man" >> ~/.bashrc
 echo "export PATH=$NETKIT_HOME/bin:$PATH" >> ~/.bashrc
 
